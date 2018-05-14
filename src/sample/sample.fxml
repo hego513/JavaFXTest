@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Polygon?>
+
+<Pane prefHeight="377.0" prefWidth="313.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fx:id="usuallyView" fitHeight="249.0" fitWidth="230.0" layoutX="73.0" layoutY="59.0" visible="true">
+         <image>
+            <Image url="@usually.png" />
+         </image>
+      </ImageView>
+     <Button layoutX="156.0" layoutY="319.0" mnemonicParsing="false" onAction="#speak" text="Button" />
+      <Polygon fill="#e6f29b" layoutX="109.0" layoutY="93.0" rotate="163.9" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Ellipse fill="#fffcab" layoutX="136.0" layoutY="59.0" radiusX="122.0" radiusY="45.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="speakText" layoutX="73.0" layoutY="50.0" />
+      <Button layoutX="282.0" mnemonicParsing="false" onAction="#close" text="☓" />
+      <ImageView fx:id="clickView" fitHeight="212.0" fitWidth="137.0" layoutX="125.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@alphaimage.png" />
+         </image></ImageView>
+   </children>
+</Pane>
