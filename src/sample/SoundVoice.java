@@ -23,6 +23,5 @@ public class SoundVoice {
             ais.close();
         }
     }
-
-    }
 }
+
